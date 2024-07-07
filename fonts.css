@@ -1,0 +1,14 @@
+@font-face {
+    font-weight: 400;
+    font-family: 'TTCommons';
+    src: local('TTCommons'), url("fonts/TTCommons-Medium.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Redcollar';
+    src: local('Redcollar'), url("/fonts/Redcollar.ttf") format("truetype");
+    font-style: normal;
+    font-display: auto;
+}

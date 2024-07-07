@@ -1,0 +1,298 @@
+@import "normalize.css";
+@import "fonts.css";
+
+.body {
+    background: black;
+}
+
+.page {
+    font-family: 'TT Commons', sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    max-width: 1440px;
+    min-width: 320px;
+    box-sizing: border-box;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 26px;
+    justify-content: flex-end;
+}
+
+.header__logo {
+    height: 16px;
+}
+
+.main {
+    display: flex;
+    gap: 32px;
+    margin-top: -12px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+    position: relative;
+}
+
+.profile::before {
+    content: "";
+    background-image: url('images/profile-collar.svg');
+    width: 147px;
+    height: 79px;
+    position: absolute;
+    top: 35px;
+    left: 95px;
+    transform: rotate(15deg);
+}
+
+.profile__photo {
+    max-height: 355px;
+    max-width: 322px;
+    object-fit: fill;
+}
+
+.profile__container {
+    background-color: #F51B1B;
+    box-sizing: border-box;
+    padding: 40px 0 0 24px;
+    border-radius: 24px 24px 0 0;
+    margin-top: -29px;
+    position: relative;
+    min-height: 454px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.profile__container::before {
+    content: "";
+    background-image: url("images/arrow.svg");
+    width: 60px;
+    height: 19px;
+    position: absolute;
+    top: -19px;
+    left: calc(50% - 30px);
+}
+
+.profile__contacts {
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile__info {
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.profile__link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.profile__link:hover {
+    transform: scale(1.05);
+}
+
+.profile__name {
+    margin: 0;
+    font-family: 'Redcollar', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+}
+
+.CV {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+}
+
+.CV__container {
+    border: 1px solid #FFFFFF;
+    position: relative;
+    margin-top: 33px;
+    box-sizing: border-box;
+    padding: 47px 49px 0 27px;
+    min-height: 355px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CV__container::before {
+    content: "";
+    background: black url(images/line.svg);
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: 50px;
+}
+
+.CV__details__title {
+    padding: 30px 0 30px 0;
+}
+
+.CV__details__list {
+    margin-left: 20px;
+}
+
+.CV__info {
+    max-width: 690px;
+}
+
+.CV__item {
+    display: flex;
+    gap: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.CV__places {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.CV__skills__container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.CV__skills {
+    display: flex;
+    gap: 72px;
+}
+
+.CV__subtitle {
+    margin: 0;
+    opacity: 0.4;
+}
+
+.CV__title {
+    margin: 0;
+    font-family: 'Redcollar', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    min-width: 124px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-top: 20px;
+        justify-content: start;
+    }
+
+    .page {
+        max-width: 360px;
+        padding: 0 20px;
+    }
+
+    .main {
+        margin-top: 0;
+        box-sizing: border-box;
+        padding-top: 48px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .profile {
+        max-width: 320px;
+    }
+
+    .profile__container {
+        width: 320px;
+        border-radius: 20px 20px 0 0;
+        padding: 24px 0 40px 16px;
+        min-height: 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .profile__info {
+        padding-top: 4px;
+    }
+
+    .profile__contacts {
+        gap: 16px;
+        padding-top: 32px;
+    }
+
+    .profile__link {
+        gap: 14px;
+    }
+
+    .profile__name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .CV {
+        padding-top: 0;
+        padding-bottom: 60px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+    }
+
+    .CV__container {
+        margin-top: 25px;
+        padding: 40px 15px 30px 15px;
+        min-height: 0;
+        gap: 24px;
+    }
+
+    .CV__container::before {
+        left: calc(50% - 30px);
+    }
+
+    .CV__item {
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 24px;
+    }
+
+    .CV__places {
+        gap: 12px;
+    }
+
+    .CV__skills__container {
+        gap: 16px;
+    }
+
+    .CV__skills {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .CV__title {
+        min-width: 120px;
+    }
+}
